@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISET - Contact</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Entête -->
+    <header class="entete">
+        <img src="logo iset.jpeg" alt="Logo ISET">
+        <h1>BIENVENU A L'ISET</h1>
+    </header>
+
+    <!-- Menu de navigation -->
+    <nav class="menu">
+        <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="etablissement.html">Établissement</a></li>
+            <li><a href="inventaire.html">Inventaire</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content py-5">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="text-center mb-5 animate-fade-up">
+                <h1 class="page-title-inline"><i class="bi bi-envelope-paper me-2"></i>Contactez-nous</h1>
+                <p class="lead text-muted">Nous sommes là pour répondre à toutes vos questions</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Contact Form -->
+                <div class="col-lg-7 animate-fade-left">
+                    <div class="contact-form-card">
+                        <h3><i class="bi bi-send me-2"></i>Envoyez-nous un message</h3>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="nom" placeholder="Votre nom" required>
+                                        <label for="nom"><i class="bi bi-person me-1"></i>Nom complet</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+                                        <label for="email"><i class="bi bi-envelope me-1"></i>Adresse email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="telephone" placeholder="Téléphone">
+                                        <label for="telephone"><i class="bi bi-telephone me-1"></i>Téléphone</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="sujet" required>
+                                            <option value="" selected disabled>Choisir...</option>
+                                            <option value="info">Demande d'information</option>
+                                            <option value="support">Support technique</option>
+                                            <option value="reclamation">Réclamation</option>
+                                            <option value="partenariat">Partenariat</option>
+                                            <option value="autre">Autre</option>
+                                        </select>
+                                        <label for="sujet"><i class="bi bi-tag me-1"></i>Sujet</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" placeholder="Votre message" style="height: 150px" required></textarea>
+                                        <label for="message"><i class="bi bi-chat-text me-1"></i>Votre message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter">
+                                        <label class="form-check-label" for="newsletter">
+                                            Je souhaite recevoir les actualités de l'ISET
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-pink btn-lg w-100">
+                                        <i class="bi bi-send me-2"></i>Envoyer le message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-5 animate-fade-right">
+                    <!-- Info Cards -->
+                    <div class="contact-info-section">
+                        <div class="contact-info-card mb-3">
+                            <div class="info-icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>Adresse</h5>
+                                <p>Avenue de la République<br>1002 Tunis, Tunisie</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card mb-3">
+                            <div class="info-icon">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>Téléphone</h5>
+                                <p>+216 71 000 000<br>+216 71 000 001</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card mb-3">
+                            <div class="info-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>Email</h5>
+                                <p>contact@iset.tn<br>support@iset.tn</p>
+                            </div>
+                        </div>
+
+                        <!-- Schedule Card -->
+                        <div class="schedule-card">
+                            <h5><i class="bi bi-clock me-2"></i>Horaires d'ouverture</h5>
+                            <ul class="schedule-list">
+                                <li>
+                                    <span>Lundi - Vendredi</span>
+                                    <span class="time">08:00 - 17:00</span>
+                                </li>
+                                <li>
+                                    <span>Samedi</span>
+                                    <span class="time">08:00 - 12:00</span>
+                                </li>
+                                <li>
+                                    <span>Dimanche</span>
+                                    <span class="time closed">Fermé</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="social-card mt-3">
+                            <h5><i class="bi bi-share me-2"></i>Suivez-nous</h5>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-link twitter"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="social-link linkedin"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social-link youtube"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section mt-5 animate-fade-up">
+                <h3 class="text-center mb-4"><i class="bi bi-map me-2"></i>Notre Localisation</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.8!2d10.1!3d36.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDQ4JzAwLjAiTiAxMMKwMDYnMDAuMCJF!5e0!3m2!1sfr!2stn!4v1600000000000!5m2!1sfr!2stn"
+                        width="100%" 
+                        height="350" 
+                        style="border:0; border-radius: 15px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>© 2026 ISET - Tous droits réservés</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Form Handler -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Animation du bouton
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Envoi en cours...';
+            btn.disabled = true;
+            
+            // Simulation d'envoi
+            setTimeout(() => {
+                btn.innerHTML = '<i class="bi bi-check-circle me-2"></i>Message envoyé !';
+                btn.classList.remove('btn-pink');
+                btn.classList.add('btn-success');
+                
+                // Reset après 3 secondes
+                setTimeout(() => {
+                    this.reset();
+                    btn.innerHTML = originalText;
+                    btn.classList.remove('btn-success');
+                    btn.classList.add('btn-pink');
+                    btn.disabled = false;
+                }, 3000);
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
