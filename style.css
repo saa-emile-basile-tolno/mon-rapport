@@ -2481,3 +2481,55 @@ body {
         gap: 15px;
     }
 }
+
+
+/* ===== SALUT BANNER ===== */
+.salut-banner {
+    background: linear-gradient(135deg, #1a73e8, #0d47a1);
+    color: #fff;
+    border-radius: 12px;
+    margin: 20px auto 10px;
+    max-width: 900px;
+    padding: 0;
+    box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3);
+}
+
+.salut-content {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 20px;
+}
+
+.salut-emoji {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.salut-message {
+    flex: 1;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    color: #fff;
+}
+
+.salut-close {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.salut-close:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
