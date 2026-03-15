@@ -26,7 +26,21 @@
 
     <!-- Contenu principal -->
     <main class="centre">
-        
+
+        <!-- Section Salut / Greeting -->
+        <section class="salut-banner fade-in" id="salut-banner">
+            <div class="salut-content">
+                <span class="salut-emoji">👋</span>
+                <p class="salut-message">Salut ! Bienvenue sur la plateforme de gestion de l'ISET de Djerba.</p>
+                <button class="salut-close" id="salut-close-btn" aria-label="Fermer">✕</button>
+            </div>
+        </section>
+        <script>
+            document.getElementById('salut-close-btn').addEventListener('click', function () {
+                document.getElementById('salut-banner').style.display = 'none';
+            });
+        </script>
+
         <!-- Section Hero / Bienvenue -->
         <section class="hero-accueil fade-in">
             <div class="hero-content">
